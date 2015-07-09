@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>注册页面</title>
+		<style type="text/css">
+		
+		</style>
+	
+	</head>
+
+	<body>
+		<h1>用户登录</h1>
+		<form name="form1" action="do.jsp" method="post">
+		<fieldset>
+			<legend>必须填写的字段</legend>
+			<label>用户名：</label><input type="text" onfocus="this.value=''" name="username" id="username" value="请输入昵称" /><br />
+			<label>密码：</label><input type="password" name="pwd" id="pwd" /><br />
+		</fieldset>
+			<label>性别：</label><input type="radio" checked name="sex" id="sex" value="男" />男
+								 <input type="radio" name="sex" id="sex1" value="女" />女<br />
+			<label>爱好：</label><input type="checkbox" checked name="hobby" id="hobby1" value="文字" />文字
+								 <input type="checkbox" name="hobby" id="hobby2" value="音乐" />音乐
+								 <input type="checkbox" name="hobby" id="hobby3" value="乒乓球" />乒乓球<br />
+			<label>籍贯：</label><select name="hometown">
+				<option value="029">陕西西安</option>
+				<option value="0916">陕西汉中</option>
+				<option selected value="0917">陕西宝鸡</option>
+				<select /><br />
+				
+				<select name="jiguan2" multiple="multiple">
+				<option value="029">陕西西安</option>
+				<option value="0916">陕西汉中</option>
+				<option value="0918">陕西延安</option>
+				<option value="0917">陕西宝鸡</option>
+				<option selected="selected" value="0913">陕西渭南</option>
+			</select><br />
+			
+			
+			<label>个人简介</label><textarea name="introduce" id="introduce" rows="10" cols="40"></textarea><br />
+			<label>年龄：</label><input type="number" name="age" id="age" /><br />
+			<label>生日：</label><input type="date" name="date" id="date" /><br />
+			<label>邮箱：</label><input type="email" name="email" id="email" /><br />
+			<label>照片：</label><input type="file" name="file" id="file" /><br />
+			<input type="submit" value="提交表单" />
+			<input type="reset" value="重置表单" />
+			<input ondblclick="alert('欢迎您')" type="button" name="button" value="按钮" />
+			
+			<input type="hidden" name="youip" value="127.0.0.1" />
+			
+			<input width=50 type="image" src="../images/Tulips.jpg" name="submit" />
+			
+			
+		</form>
+	
+	
+	</body>
+
+
+
+
+
+</html>
